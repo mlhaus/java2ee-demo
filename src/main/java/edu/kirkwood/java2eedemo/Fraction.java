@@ -42,7 +42,7 @@ public class Fraction {
         // numbers without leaving any remainder. For example, the greatest common divisor of 30 and 45 is 15.
         // https://stackoverflow.com/a/4009247
         if (b == 0)
-            return a;
+            return Math.abs(a);
         return gcd(b,a % b);
     }
 
