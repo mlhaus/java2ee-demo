@@ -7,10 +7,13 @@
 <body>
 <h1>Java 2 Web Apps</h1>
 <ul>
-    <li>Week 5 Demos
+    <li>Week 5-6 Demos
         <ul>
             <li><a href="hello-servlet">Hello Servlet</a></li>
             <li><a href="my-calculator">My Calculator</a></li>
+            <li><a href="temp-converter">Temperature Converter</a></li>
+            <li><a href="fraction">Fraction Calculator</a></li>
+            <li><a href="volume">Volume Calculator</a></li>
         </ul>
     </li>
 </ul>

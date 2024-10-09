@@ -9,26 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="feee0e39-4a09-4041-9ff2-eb6a72cb01a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/java2eedemo/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/java2eedemo/MyCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/Helpers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/Validators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/my-calculator.jsp" afterDir="false" />
+    <list default="true" id="feee0e39-4a09-4041-9ff2-eb6a72cb01a7" name="Changes" comment="Finished MyCalculator">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/java2eedemo/Fraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/java2eedemo/FractionCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/fraction.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
+    <list id="3edac358-95d7-43d2-9083-0eca15c05e79" name="Changes by jacob" comment="" />
+    <list id="96ba4486-2381-4a0d-91ef-80bef151021a" name="Changes by walle" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mlhaus&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mlhaus/java2ee-demo&quot;,
+    &quot;accountId&quot;: &quot;23a67d54-f60e-4c57-99eb-0d901e58a85f&quot;
+  }
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -70,6 +71,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Azure Web App.Azure Web App: java2ee-demo:mlhaus.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Tomcat Server.Tomcat 10.1.26.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -83,7 +85,37 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.26">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="f7d7b928-a368-497d-a5ca-bd4e37644b96" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 10.1.26" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.26" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -174,6 +206,137 @@
         </option>
       </method>
     </configuration>
+    <configuration name="Azure Web App: java2ee-demo:mlhaus" type="com.microsoft.intellij.run.configuration.WebAppConfigurationType" factoryName="Azure Web App">
+      <option name="appServicePlanName" value="" />
+      <option name="appServicePlanResourceGroupName" value="" />
+      <option name="appSettingsKey" value="1d96a9c7-dba0-4736-aea3-4696fc1c9ccf" />
+      <option name="appSettingsToRemove" />
+      <option name="applicationLogLevel" value="Error" />
+      <option name="artifactIdentifier" value="$PROJECT_DIR$/target/java2ee-demo-1.0-SNAPSHOT.war" />
+      <option name="azureArtifactType" value="Artifact" />
+      <option name="config">
+        <AppServiceConfig>
+          <option name="appName" value="mlhaus" />
+          <option name="appSettingsToRemove" />
+          <option name="diagnosticConfig" />
+          <option name="pricingTier">
+            <PricingTier>
+              <option name="size" value="F1" />
+              <option name="tier" value="Free" />
+            </PricingTier>
+          </option>
+          <option name="region">
+            <Region>
+              <option name="abbreviation" value="CUS" />
+              <option name="label" value="Central US" />
+              <option name="name" value="centralus" />
+            </Region>
+          </option>
+          <option name="resourceGroup" value="java-web" />
+          <option name="runtime">
+            <RuntimeConfig>
+              <option name="image" />
+              <option name="javaVersion" value="Java 21" />
+              <option name="os" value="Linux" />
+              <option name="registryUrl" />
+              <option name="startUpCommand" />
+              <option name="username" />
+              <option name="webContainer" value="Tomcat 10.1" />
+            </RuntimeConfig>
+          </option>
+          <option name="servicePlanName" value="ASP-javaweb-8edc" />
+          <option name="servicePlanResourceGroup" value="java-web" />
+          <option name="slotConfig" />
+          <option name="subscriptionId" value="61c9da42-b916-41c9-ba1d-e2722cf959ee" />
+        </AppServiceConfig>
+      </option>
+      <option name="creatingAppServicePlan" value="false" />
+      <option name="creatingNew" value="false" />
+      <option name="creatingResGrp" value="false" />
+      <option name="deployToRoot" value="true" />
+      <option name="deployToSlot" value="false" />
+      <option name="enableApplicationLog" value="false" />
+      <option name="enableDetailedErrorMessage" value="false" />
+      <option name="enableFailedRequestTracing" value="false" />
+      <option name="enableWebServerLogging" value="false" />
+      <option name="newSlotConfigurationSource" />
+      <option name="newSlotName" />
+      <option name="openBrowserAfterDeployment" value="true" />
+      <option name="operatingSystem" />
+      <option name="packaging" value="war" />
+      <option name="pricing" value="" />
+      <option name="projectBase" value="" />
+      <option name="projectType" value="" />
+      <option name="region" value="" />
+      <option name="resourceGroup" value="" />
+      <option name="slotName" />
+      <option name="slotPanelVisible" value="false" />
+      <option name="subscriptionId" value="" />
+      <option name="targetName" value="" />
+      <option name="targetPath" value="" />
+      <option name="webAppContainer" />
+      <option name="webAppId" value="" />
+      <option name="webAppJavaVersion" />
+      <option name="webAppName" value="" />
+      <option name="webServerLogQuota" value="35" />
+      <option name="webServerRetentionPeriod" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="com.microsoft.intellij.run.configuration.WebAppConfigurationType" factoryName="Azure Web App">
+      <option name="appServicePlanName" value="" />
+      <option name="appServicePlanResourceGroupName" value="" />
+      <option name="appSettingsKey" value="c4730c8f-eb46-4e9f-960e-35412f0efdd4" />
+      <option name="appSettingsToRemove" />
+      <option name="applicationLogLevel" value="Error" />
+      <option name="artifactIdentifier" />
+      <option name="azureArtifactType" />
+      <option name="config">
+        <AppServiceConfig>
+          <option name="appName" />
+          <option name="appSettingsToRemove" />
+          <option name="diagnosticConfig" />
+          <option name="pricingTier" />
+          <option name="region" />
+          <option name="resourceGroup" />
+          <option name="runtime" />
+          <option name="servicePlanName" />
+          <option name="servicePlanResourceGroup" />
+          <option name="slotConfig" />
+          <option name="subscriptionId" />
+        </AppServiceConfig>
+      </option>
+      <option name="creatingAppServicePlan" value="false" />
+      <option name="creatingNew" value="false" />
+      <option name="creatingResGrp" value="false" />
+      <option name="deployToRoot" value="true" />
+      <option name="deployToSlot" value="false" />
+      <option name="enableApplicationLog" value="false" />
+      <option name="enableDetailedErrorMessage" value="false" />
+      <option name="enableFailedRequestTracing" value="false" />
+      <option name="enableWebServerLogging" value="false" />
+      <option name="newSlotConfigurationSource" />
+      <option name="newSlotName" />
+      <option name="openBrowserAfterDeployment" value="true" />
+      <option name="operatingSystem" />
+      <option name="packaging" />
+      <option name="pricing" value="" />
+      <option name="projectBase" value="" />
+      <option name="projectType" value="" />
+      <option name="region" value="" />
+      <option name="resourceGroup" value="" />
+      <option name="slotName" />
+      <option name="slotPanelVisible" value="false" />
+      <option name="subscriptionId" value="" />
+      <option name="targetName" value="" />
+      <option name="targetPath" value="" />
+      <option name="webAppContainer" />
+      <option name="webAppId" value="" />
+      <option name="webAppJavaVersion" />
+      <option name="webAppName" value="" />
+      <option name="webServerLogQuota" value="35" />
+      <option name="webServerRetentionPeriod" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -194,11 +357,32 @@
       <workItem from="1727225030234" duration="46000" />
       <workItem from="1727225565746" duration="5891000" />
       <workItem from="1727284611344" duration="2000" />
-      <workItem from="1727824093542" duration="5473000" />
+      <workItem from="1727824093542" duration="6173000" />
+      <workItem from="1727831966302" duration="3325000" />
+      <workItem from="1728266264567" duration="8000" />
+      <workItem from="1728266349049" duration="7000" />
+      <workItem from="1728271335790" duration="16000" />
+      <workItem from="1728275833020" duration="18000" />
+      <workItem from="1728275917281" duration="627000" />
+      <workItem from="1728428156313" duration="12000" />
+      <workItem from="1728430107272" duration="5020000" />
     </task>
+    <task id="LOCAL-00001" summary="Finished MyCalculator">
+      <option name="closed" value="true" />
+      <created>1727831312840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727831312840</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished MyCalculator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished MyCalculator" />
   </component>
 </project>
