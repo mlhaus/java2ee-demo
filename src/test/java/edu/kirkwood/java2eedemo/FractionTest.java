@@ -103,11 +103,24 @@ class FractionTest {
 
     @Test
     void mixedNumber() {
-        fail();
+        assertEquals("1", f1.mixedNumber());
+        assertEquals("2/3", f2.mixedNumber());
+        f2.setNumerator(0);
+        assertEquals("0", f2.mixedNumber());
+        f1.setNumerator(7);
+        f1.setDenominator(4);
+        assertEquals("1 3/4", f1.mixedNumber());
+        f1.setNumerator(-7);
+        assertEquals("-1 3/4", f1.mixedNumber());
     }
 
     @Test
     void add() {
-        fail();
+        assertEquals("1 + 2/3 = 1 2/3", f1.add(f2));
+        f1.setNumerator(25);
+        f1.setDenominator(-100);
+        f2.setNumerator(-10);
+        f2.setDenominator(6);
+        assertEquals("-1/4 + -1 2/3 = -1 11/12", f1.add(f2));
     }
 }

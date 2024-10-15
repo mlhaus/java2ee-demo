@@ -9,13 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="feee0e39-4a09-4041-9ff2-eb6a72cb01a7" name="Changes" comment="Finished Fraction Calculator">
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/kirkwood/java2eedemo/FractionTest.java" afterDir="false" />
+    <list default="true" id="feee0e39-4a09-4041-9ff2-eb6a72cb01a7" name="Changes" comment="Starting Unit Tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/java2eedemo/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/java2eedemo/Fraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/kirkwood/java2eedemo/FractionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/kirkwood/java2eedemo/FractionTest.java" afterDir="false" />
     </list>
-    <list id="3edac358-95d7-43d2-9083-0eca15c05e79" name="Changes by jacob" comment="" />
-    <list id="96ba4486-2381-4a0d-91ef-80bef151021a" name="Changes by walle" comment="" />
+    <list id="eb8c354d-ba86-43ff-ac65-f9df0db64b14" name="Changes by sethe" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,10 +70,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Azure Web App.Azure Web App: java2ee-demo:mlhaus.executor": "Run",
+    "JUnit.FractionTest.add.executor": "Run",
     "JUnit.FractionTest.executor": "Run",
     "JUnit.FractionTest.gcd.executor": "Run",
     "JUnit.FractionTest.getDenominator.executor": "Run",
     "JUnit.FractionTest.getNumerator.executor": "Run",
+    "JUnit.FractionTest.mixedNumber.executor": "Run",
     "JUnit.FractionTest.setDenominator.executor": "Run",
     "JUnit.FractionTest.setNumerator.executor": "Run",
     "JUnit.FractionTest.simplify.executor": "Run",
@@ -102,7 +103,7 @@
       <recent name="edu.kirkwood.java2eedemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FractionTest.simplify">
+  <component name="RunManager" selected="JUnit.All in java2ee-demo">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -133,6 +134,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in java2ee-demo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java2ee-demo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FractionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java2ee-demo" />
       <extension name="coverage">
@@ -148,7 +157,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FractionTest.gcd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FractionTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java2ee-demo" />
       <extension name="coverage">
         <pattern>
@@ -158,13 +167,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.kirkwood.java2eedemo" />
       <option name="MAIN_CLASS_NAME" value="edu.kirkwood.java2eedemo.FractionTest" />
-      <option name="METHOD_NAME" value="gcd" />
+      <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FractionTest.setDenominator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FractionTest.mixedNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java2ee-demo" />
       <extension name="coverage">
         <pattern>
@@ -174,23 +183,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.kirkwood.java2eedemo" />
       <option name="MAIN_CLASS_NAME" value="edu.kirkwood.java2eedemo.FractionTest" />
-      <option name="METHOD_NAME" value="setDenominator" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FractionTest.setNumerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java2ee-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.kirkwood.java2eedemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.kirkwood.java2eedemo" />
-      <option name="MAIN_CLASS_NAME" value="edu.kirkwood.java2eedemo.FractionTest" />
-      <option name="METHOD_NAME" value="setNumerator" />
+      <option name="METHOD_NAME" value="mixedNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -435,11 +428,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FractionTest.simplify" />
-        <item itemvalue="JUnit.FractionTest.gcd" />
-        <item itemvalue="JUnit.FractionTest.setDenominator" />
-        <item itemvalue="JUnit.FractionTest.setNumerator" />
+        <item itemvalue="JUnit.All in java2ee-demo" />
         <item itemvalue="JUnit.FractionTest" />
+        <item itemvalue="JUnit.FractionTest.add" />
+        <item itemvalue="JUnit.FractionTest.mixedNumber" />
+        <item itemvalue="JUnit.FractionTest.simplify" />
       </list>
     </recent_temporary>
   </component>
@@ -470,7 +463,8 @@
       <workItem from="1728275833020" duration="18000" />
       <workItem from="1728275917281" duration="627000" />
       <workItem from="1728428156313" duration="12000" />
-      <workItem from="1728430107272" duration="9825000" />
+      <workItem from="1728430107272" duration="10686000" />
+      <workItem from="1729031112770" duration="2664000" />
     </task>
     <task id="LOCAL-00001" summary="Finished MyCalculator">
       <option name="closed" value="true" />
@@ -488,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728435808154</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Starting Unit Tests">
+      <option name="closed" value="true" />
+      <created>1728440433006</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728440433006</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,6 +499,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished MyCalculator" />
     <MESSAGE value="Finished Fraction Calculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Fraction Calculator" />
+    <MESSAGE value="Starting Unit Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting Unit Tests" />
   </component>
 </project>

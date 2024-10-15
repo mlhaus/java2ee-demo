@@ -73,7 +73,7 @@ public class Fraction {
         } else if(Math.abs(simplified.numerator) > simplified.denominator) {
             int wholeNumber = Math.abs(simplified.numerator) / simplified.denominator;
             int remainder = Math.abs(simplified.numerator) % simplified.denominator;
-            return simplified.numerator < 0 ? "-" : "" + wholeNumber + " " + remainder + "/" + simplified.denominator;
+            return (simplified.numerator < 0 ? "-" : "") + wholeNumber + " " + remainder + "/" + simplified.denominator;
         } else if(simplified.numerator == 0) {
             return "0";
         } else {
