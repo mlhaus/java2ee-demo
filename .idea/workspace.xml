@@ -2,19 +2,40 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="java2ee-demo:war" />
+      <artifact name="java2ee-demo:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="feee0e39-4a09-4041-9ff2-eb6a72cb01a7" name="Changes" comment="Starting Unit Tests">
+    <list default="true" id="feee0e39-4a09-4041-9ff2-eb6a72cb01a7" name="Changes" comment="Finished Fraction Unit Tests">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/ecommerce/controller/AdminOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/ecommerce/controller/AdminProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/ecommerce/controller/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/ecommerce/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/ecommerce/model/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/ecommerce/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/ecommerce/model/ProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/DB_Connect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ecommerce/admin-orders.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ecommerce/admin-product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ecommerce/shop.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/main-nav.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/kirkwood/shared/HelpersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/kirkwood/shared/ValidatorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/java2eedemo/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/java2eedemo/Fraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/kirkwood/java2eedemo/FractionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/kirkwood/java2eedemo/FractionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/Helpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/kirkwood/shared/Helpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fraction.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/fraction.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/my-calculator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/my-calculator.jsp" afterDir="false" />
     </list>
-    <list id="eb8c354d-ba86-43ff-ac65-f9df0db64b14" name="Changes by sethe" comment="" />
+    <list id="2a681e6e-f4dc-4345-882d-1f2651ce1239" name="Changes by jacob" comment="" />
+    <list id="5a741407-eac4-4331-8b1d-6a5a0f268b26" name="Changes by walle" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +44,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -58,6 +79,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -69,7 +93,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DB_Connect.executor": "Run",
+    "Application.OrderDAO.executor": "Run",
+    "Application.ProductDAO.executor": "Run",
     "Azure Web App.Azure Web App: java2ee-demo:mlhaus.executor": "Run",
+    "JUnit.All in java2ee-demo.executor": "Run",
     "JUnit.FractionTest.add.executor": "Run",
     "JUnit.FractionTest.executor": "Run",
     "JUnit.FractionTest.gcd.executor": "Run",
@@ -80,7 +108,9 @@
     "JUnit.FractionTest.setNumerator.executor": "Run",
     "JUnit.FractionTest.simplify.executor": "Run",
     "JUnit.FractionTest.testToString.executor": "Run",
+    "JUnit.HelpersTest.round.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 10.1.26.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -91,8 +121,16 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "fileTemplates",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -100,10 +138,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="edu.kirkwood.shared" />
       <recent name="edu.kirkwood.java2eedemo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in java2ee-demo">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.26">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -134,6 +173,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DB_Connect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.kirkwood.shared.DB_Connect" />
+      <module name="java2ee-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.kirkwood.shared.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.kirkwood.ecommerce.model.OrderDAO" />
+      <module name="java2ee-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.kirkwood.ecommerce.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.kirkwood.ecommerce.model.ProductDAO" />
+      <module name="java2ee-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.kirkwood.ecommerce.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in java2ee-demo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java2ee-demo" />
       <option name="PACKAGE_NAME" value="" />
@@ -142,64 +220,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FractionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HelpersTest.round" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java2ee-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.kirkwood.java2eedemo.*" />
+          <option name="PATTERN" value="edu.kirkwood.shared.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="edu.kirkwood.java2eedemo" />
-      <option name="MAIN_CLASS_NAME" value="edu.kirkwood.java2eedemo.FractionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FractionTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java2ee-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.kirkwood.java2eedemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.kirkwood.java2eedemo" />
-      <option name="MAIN_CLASS_NAME" value="edu.kirkwood.java2eedemo.FractionTest" />
-      <option name="METHOD_NAME" value="add" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FractionTest.mixedNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java2ee-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.kirkwood.java2eedemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.kirkwood.java2eedemo" />
-      <option name="MAIN_CLASS_NAME" value="edu.kirkwood.java2eedemo.FractionTest" />
-      <option name="METHOD_NAME" value="mixedNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FractionTest.simplify" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java2ee-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.kirkwood.java2eedemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.kirkwood.java2eedemo" />
-      <option name="MAIN_CLASS_NAME" value="edu.kirkwood.java2eedemo.FractionTest" />
-      <option name="METHOD_NAME" value="simplify" />
+      <option name="PACKAGE_NAME" value="edu.kirkwood.shared" />
+      <option name="MAIN_CLASS_NAME" value="edu.kirkwood.shared.HelpersTest" />
+      <option name="METHOD_NAME" value="round" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -428,19 +459,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OrderDAO" />
+        <item itemvalue="JUnit.HelpersTest.round" />
+        <item itemvalue="Application.ProductDAO" />
+        <item itemvalue="Application.DB_Connect" />
         <item itemvalue="JUnit.All in java2ee-demo" />
-        <item itemvalue="JUnit.FractionTest" />
-        <item itemvalue="JUnit.FractionTest.add" />
-        <item itemvalue="JUnit.FractionTest.mixedNumber" />
-        <item itemvalue="JUnit.FractionTest.simplify" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
       </set>
     </attachedChunks>
   </component>
@@ -464,7 +495,12 @@
       <workItem from="1728275917281" duration="627000" />
       <workItem from="1728428156313" duration="12000" />
       <workItem from="1728430107272" duration="10686000" />
-      <workItem from="1729031112770" duration="2664000" />
+      <workItem from="1729031112770" duration="9562000" />
+      <workItem from="1729528975087" duration="1314000" />
+      <workItem from="1729638202004" duration="11104000" />
+      <workItem from="1729660732400" duration="1192000" />
+      <workItem from="1729704105412" duration="475000" />
+      <workItem from="1730242191548" duration="4294000" />
     </task>
     <task id="LOCAL-00001" summary="Finished MyCalculator">
       <option name="closed" value="true" />
@@ -490,7 +526,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728440433006</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finished Fraction Unit Tests">
+      <option name="closed" value="true" />
+      <created>1729035035375</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729035035375</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,6 +544,7 @@
     <MESSAGE value="Finished MyCalculator" />
     <MESSAGE value="Finished Fraction Calculator" />
     <MESSAGE value="Starting Unit Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting Unit Tests" />
+    <MESSAGE value="Finished Fraction Unit Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Fraction Unit Tests" />
   </component>
 </project>
