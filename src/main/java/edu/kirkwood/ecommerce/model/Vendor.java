@@ -19,6 +19,14 @@ public class Vendor {
     }
 
     public void setVend_id(String vend_id) {
+        // If set, capitalize the vendor ID for consistency
+        if (vend_id != null) {
+            vend_id = vend_id.toUpperCase();
+        }
+        // Requires any text
+        if(vend_id == null || vend_id.strip().length() == 0) {
+            throw new IllegalArgumentException("Vendor ID is required");
+        }
         this.vend_id = vend_id;
     }
 
@@ -27,6 +35,14 @@ public class Vendor {
     }
 
     public void setVend_name(String vend_name) {
+        // If set, capitalize the first letter for consistency
+//        if (vend_name != null) {
+//            vend_name = vend_name.substring(0,1).toUpperCase() + vend_name.substring(1);
+//        }
+        // Requires any text
+        if(vend_name == null || vend_name.strip().length() == 0) {
+            throw new IllegalArgumentException("Name is required");
+        }
         this.vend_name = vend_name;
     }
 
@@ -35,6 +51,9 @@ public class Vendor {
     }
 
     public void setAddress(Address address) {
+        if(address == null) {
+            throw new IllegalArgumentException("Vendor Address is required");
+        }
         this.address = address;
     }
 
