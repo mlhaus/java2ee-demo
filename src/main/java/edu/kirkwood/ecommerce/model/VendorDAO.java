@@ -42,16 +42,23 @@ public class VendorDAO {
         }
     }
 
-    public static boolean updateVendor(Vendor vendor) {
+    public static boolean updateVendor(Vendor vendorOriginal, Vendor vendorNew) {
         try(Connection connection = getConnection()) {
-            CallableStatement statement = connection.prepareCall("{CALL sp_update_vendor_admin(?, ?, ?, ?, ?, ?, ?)}");
-            statement.setString(1, vendor.getVend_id());
-            statement.setString(2, vendor.getVend_name());
-            statement.setString(3, vendor.getAddress().getAddress());
-            statement.setString(4, vendor.getAddress().getCity());
-            statement.setString(5, vendor.getAddress().getState());
-            statement.setString(6, vendor.getAddress().getZip());
-            statement.setString(7, vendor.getAddress().getCountry());
+            CallableStatement statement = connection.prepareCall("{CALL sp_update_vendor_admin(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)}");
+            statement.setString(1, vendorOriginal.getVend_id());
+            statement.setString(2, vendorOriginal.getVend_name());
+            statement.setString(3, vendorOriginal.getAddress().getAddress());
+            statement.setString(4, vendorOriginal.getAddress().getCity());
+            statement.setString(5, vendorOriginal.getAddress().getState());
+            statement.setString(6, vendorOriginal.getAddress().getZip());
+            statement.setString(7, vendorOriginal.getAddress().getCountry());
+            statement.setString(8, vendorNew.getVend_id());
+            statement.setString(9, vendorNew.getVend_name());
+            statement.setString(10, vendorNew.getAddress().getAddress());
+            statement.setString(11, vendorNew.getAddress().getCity());
+            statement.setString(12, vendorNew.getAddress().getState());
+            statement.setString(13, vendorNew.getAddress().getZip());
+            statement.setString(14, vendorNew.getAddress().getCountry());
             int rowsAffected = statement.executeUpdate();
             return rowsAffected == 1;
         } catch(SQLException e) {
@@ -59,8 +66,8 @@ public class VendorDAO {
             return false;
         }
     }
-    
-    
+
+
 
     public static Vendor getVendor(String vend_id) {
         Vendor vendor = null;

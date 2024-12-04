@@ -1,6 +1,5 @@
 package edu.kirkwood.ecommerce.controller;
 
-import edu.kirkwood.ecommerce.model.Address;
 import edu.kirkwood.ecommerce.model.Vendor;
 import edu.kirkwood.ecommerce.model.VendorDAO;
 import jakarta.servlet.ServletException;
@@ -36,116 +35,94 @@ public class AdminUpdateVendor extends HttpServlet {
 
         boolean validationError = false;
 
-        Vendor vendor = VendorDAO.getVendor(id); // Get the vendor from the data in the hidden field
-        if(vendor == null) {
+        Vendor vendorOriginal = VendorDAO.getVendor(id); // Get the vendor from the data in the hidden field
+        Vendor vendorNew = VendorDAO.getVendor(id);
+        if(vendorNew == null) {
             req.setAttribute("vendorUpdated", false);
             req.setAttribute("vendorUpdatedMessage", "Failed to update vendor!");
         }
-        if(!id.equals(vend_id)) {
-            Vendor vendorFromDB = VendorDAO.getVendor(vend_id);
-            if(vendorFromDB != null) {
-                validationError = true;
-                req.setAttribute("vendorIdError", true);
-                req.setAttribute("vendorIdMessage", "That vendor already exists");
-            } else {
-                try {
-                    vendor.setVend_id(vend_id);
-                    req.setAttribute("vendorIdError", false);
-                    req.setAttribute("vendorIdMessage", "Looks good!");
-                } catch (IllegalArgumentException e) {
-                    validationError = true;
-                    req.setAttribute("vendorIdError", true);
-                    req.setAttribute("vendorIdMessage", e.getMessage());
-                }
-            }
-        } else {
-            req.setAttribute("vendorIdError", false);
-            req.setAttribute("vendorIdMessage", "Looks good!");
+
+
+        try {
+            vendorNew.setVend_name(vend_name);
+            req.setAttribute("vendorNameError", false);
+            req.setAttribute("vendorNameMessage", "Looks good!");
+        } catch(IllegalArgumentException e) {
+            validationError = true;
+            req.setAttribute("vendorNameError", true);
+            req.setAttribute("vendorNameMessage", e.getMessage());
         }
 
+        try {
+            vendorNew.getAddress().setCountry(country);
+            req.setAttribute("countryError", false);
+            req.setAttribute("countryMessage", "Looks good!");
+        } catch(IllegalArgumentException e) {
+            validationError = true;
+            req.setAttribute("countryError", true);
+            req.setAttribute("countryMessage", e.getMessage());
+        }
 
-//        try {
-//            vendor.setVend_name(vend_name);
-//            req.setAttribute("vendorNameError", false);
-//            req.setAttribute("vendorNameMessage", "Looks good!");
-//        } catch(IllegalArgumentException e) {
-//            validationError = true;
-//            req.setAttribute("vendorNameError", true);
-//            req.setAttribute("vendorNameMessage", e.getMessage());
-//        }
-//
-//        Address address = new Address();
-//
-//        try {
-//            address.setCountry(country);
-//            req.setAttribute("countryError", false);
-//            req.setAttribute("countryMessage", "Looks good!");
-//        } catch(IllegalArgumentException e) {
-//            validationError = true;
-//            req.setAttribute("countryError", true);
-//            req.setAttribute("countryMessage", e.getMessage());
-//        }
-//
-//        try {
-//            address.setAddress(streetAddress);
-//            req.setAttribute("addressError", false);
-//            req.setAttribute("addressMessage", "Looks good!");
-//        } catch(IllegalArgumentException e) {
-//            validationError = true;
-//            req.setAttribute("addressError", true);
-//            req.setAttribute("addressMessage", e.getMessage());
-//        }
-//
-//        try {
-//            address.setZip(zip);
-//            // Validate the country first
-//            if(address.getCountry() != null) {
-//                req.setAttribute("zipError", false);
-//                req.setAttribute("zipMessage", "Looks good!");
-//            }
-//        } catch(IllegalArgumentException e) {
-//            validationError = true;
-//            req.setAttribute("zipError", true);
-//            req.setAttribute("zipMessage", e.getMessage());
-//        }
-//
-//        try {
-//            address.setCity(city);
-//            // Validate the country first
-//            if(address.getCountry() != null) {
-//                req.setAttribute("cityError", false);
-//                req.setAttribute("cityMessage", "Looks good!");
-//            }
-//        } catch(IllegalArgumentException e) {
-//            validationError = true;
-//            req.setAttribute("cityError", true);
-//            req.setAttribute("cityMessage", e.getMessage());
-//        }
-//
-//        try {
-//            address.setState(state);
-//            // Validate the country first
-//            if(address.isUnitedStates()) {
-//                req.setAttribute("stateError", false);
-//                req.setAttribute("stateMessage", "Looks good!");
-//            }
-//        } catch(IllegalArgumentException e) {
-//            validationError = true;
-//            req.setAttribute("stateError", true);
-//            req.setAttribute("stateMessage", e.getMessage());
-//        }
-//
-        req.setAttribute("vendor", vendor);
-//
-//        if(!validationError) {
-//            boolean vendorAdded = VendorDAO.addVendor(vendor);
-//            req.setAttribute("vendorAdded", vendorAdded);
-//            if(vendorAdded) {
-//                req.setAttribute("vendorAddedMessage", "Successfully added vendor!");
-//            } else {
-//                req.setAttribute("vendorAddedMessage", "Failed to add vendor!");
-//            }
-//        }
+        try {
+            vendorNew.getAddress().setAddress(streetAddress);
+            req.setAttribute("addressError", false);
+            req.setAttribute("addressMessage", "Looks good!");
+        } catch(IllegalArgumentException e) {
+            validationError = true;
+            req.setAttribute("addressError", true);
+            req.setAttribute("addressMessage", e.getMessage());
+        }
+
+        try {
+            vendorNew.getAddress().setZip(zip);
+            // Validate the country first
+            if(vendorNew.getAddress().getCountry() != null) {
+                req.setAttribute("zipError", false);
+                req.setAttribute("zipMessage", "Looks good!");
+            }
+        } catch(IllegalArgumentException e) {
+            validationError = true;
+            req.setAttribute("zipError", true);
+            req.setAttribute("zipMessage", e.getMessage());
+        }
+
+        try {
+            vendorNew.getAddress().setCity(city);
+            // Validate the country first
+            if(vendorNew.getAddress().getCountry() != null) {
+                req.setAttribute("cityError", false);
+                req.setAttribute("cityMessage", "Looks good!");
+            }
+        } catch(IllegalArgumentException e) {
+            validationError = true;
+            req.setAttribute("cityError", true);
+            req.setAttribute("cityMessage", e.getMessage());
+        }
+
+        try {
+            vendorNew.getAddress().setState(state);
+            // Validate the country first
+            if(vendorNew.getAddress().isUnitedStates()) {
+                req.setAttribute("stateError", false);
+                req.setAttribute("stateMessage", "Looks good!");
+            }
+        } catch(IllegalArgumentException e) {
+            validationError = true;
+            req.setAttribute("stateError", true);
+            req.setAttribute("stateMessage", e.getMessage());
+        }
+
+        req.setAttribute("vendor", vendorNew);
+
+        if(!validationError) {
+            boolean vendorUpdated = VendorDAO.updateVendor(vendorOriginal, vendorNew);
+            req.setAttribute("vendorUpdated", vendorUpdated);
+            if(vendorUpdated) {
+                req.setAttribute("vendorUpdatedMessage", "Successfully updated vendor!");
+            } else {
+                req.setAttribute("vendorUpdatedMessage", "Failed to update vendor!");
+            }
+        }
 
 
         req.getRequestDispatcher("WEB-INF/ecommerce/admin-update-vendor.jsp").forward(req, resp);
