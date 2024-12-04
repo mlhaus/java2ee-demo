@@ -13,7 +13,7 @@
 <%@ include file="../../main-nav.jsp" %>
 <div class="container py-4">
     <a href="vendors" class="btn btn-primary" role="button">View All Vendors</a>
-    <h1>Add Vendors</h1>
+    <h1>Add Vendor</h1>
     <c:if test="${not empty vendorAdded}">
     <div class="alert <c:choose><c:when test="${vendorAdded == true}">alert-success</c:when><c:when test="${vendorAdded == false}">alert-danger</c:when><c:otherwise></c:otherwise></c:choose>" role="alert">
         ${vendorAddedMessage}
